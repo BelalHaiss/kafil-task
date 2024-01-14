@@ -1,1 +1,1 @@
-import './TopNav/TopNav';
+import './TopNav';

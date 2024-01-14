@@ -36,6 +36,54 @@
   .carousel-img {
     @apply w-[100%] h-[100%]  object-cover rounded-md;
   }
+
+  .seller-icons {
+    @apply w-[45px] h-[45px] cursor-pointer rounded-md bg-gray-50 flex items-center justify-center;
+  }
+
+  .btn-solid-green {
+    @apply focus:outline-none text-white bg-green-500 hover:bg-green-700 focus:ring-4 focus:ring-green-300 font-medium rounded-lg  dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800;
+  }
+
+  .social-btn {
+    @apply flex cursor-pointer justify-center items-center rounded-md w-[42px] h-[42px];
+  }
+
+  .seller-side-service_container {
+    @apply flex gap-2 bg-white rounded-lg;
+  }
+  .seller-side-service_img {
+    @apply rounded-l-md w-[108px] h-[108px] object-cover;
+  }
+  .seller-side-service_description_container {
+    @apply flex flex-col gap-2  justify-center  flex-[1]  p-1;
+  }
+  .seller-side-service_description_container-description {
+    @apply font-semibold text-black text-xs;
+  }
+  .seller-side-service_description_container-other_info {
+    @apply flex items-center gap-3;
+  }
+
+  .seller-side-service_description_container-other_info-rate {
+    @apply flex text-xs gap-[1px] text-gray-500;
+  }
+  .seller-side-service_description_container-other_info-pricing {
+    @apply font-semibold text-xs flex gap-[2px];
+  }
+  .seller_service_addOns_box {
+    @apply bg-white rounded-xl p-4 justify-center flex-col  flex gap-8;
+  }
+
+  .seller_service_h5 {
+    @apply font-semibold text-lg md:text-2xl text-black;
+  }
+  .seller-tag {
+    @apply flex justify-center items-center h-[40px] bg-green-50 text-green-500 p-2 rounded-md;
+  }
+  .btn-math_operation {
+    @apply bg-white w-[28px] h-[28px] rounded-full flex items-center justify-center  hover:ring-2 hover:ring-gray-400 active:bg-gray-200;
+  }
 }
 
 .overlay-show {
@@ -54,4 +102,44 @@
 .overlay-show {
   opacity: 0.5;
   visibility: visible;
+}
+
+.custom-checkbox {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-checkbox input {
+  display: none;
+}
+
+.custom-checkbox .checkmark {
+  transition: opacity 0.2s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.custom-checkbox input:checked + .checkmark {
+  opacity: 1;
+  visibility: visible;
+}
+
+.heart_icon {
+  transition: opacity 0.2s;
+}
+
+.heart_icon.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.heart_icon.hide {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
 }
