@@ -12,6 +12,10 @@
 }
 
 @layer components {
+  .full-container {
+    @apply max-w-[1250px] mx-auto max-md:!p-[2px];
+  }
+
   .link-icon {
     @apply w-[30px] h-[30px] fill-gray-300;
   }
@@ -34,7 +38,7 @@
   }
 
   .carousel-img {
-    @apply w-[100%] h-[100%]  object-cover rounded-md;
+    @apply w-[100%] h-[100%]   rounded-md;
   }
 
   .seller-icons {
@@ -50,7 +54,7 @@
   }
 
   .seller-side-service_container {
-    @apply flex gap-2 bg-white rounded-lg;
+    @apply flex gap-2 bg-white rounded-lg cursor-pointer;
   }
   .seller-side-service_img {
     @apply rounded-l-md w-[108px] h-[108px] object-cover;
